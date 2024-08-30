@@ -9,6 +9,8 @@ import Foundation
 import FirebaseAuth
 
 class LoginViewModel: ObservableObject {
+  @Published var email: String = ""
+  @Published var password: String = ""
   @Published var isAuth:Bool = false
   
   init() {
@@ -43,19 +45,20 @@ class LoginViewModel: ObservableObject {
       }
     }
   }
-//  パスワードをリセットする関数
+  //  パスワードをリセットする関数
   func resetPassword(email: String) {
     Auth.auth().sendPasswordReset(withEmail: email) { error in
-      if let error = error {
+      if error != nil {
         print("error")
       }
     }
   }
+  //  ログアウトのメソッド
   func signOut() {
     do {
       try Auth.auth().signOut()
       isAuth = false
-    } catch let signOutError as NSError {
+    } catch _ as NSError {
       print("エラー")
     }
   }
