@@ -11,6 +11,7 @@
 		FC0294EF2C80AEE400528B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0294EE2C80AEE400528B0C /* Assets.xcassets */; };
 		FC0294F22C80AEE400528B0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0294F12C80AEE400528B0C /* Preview Assets.xcassets */; };
 		FC0294FD2C80B3D700528B0C /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0294FC2C80B3D700528B0C /* Splash.swift */; };
+		FC0295012C81EF5B00528B0C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0295002C81EF5B00528B0C /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FC0294EE2C80AEE400528B0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC0294F12C80AEE400528B0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC0294FC2C80B3D700528B0C /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		FC0295002C81EF5B00528B0C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				FC0294FC2C80B3D700528B0C /* Splash.swift */,
+				FC0295002C81EF5B00528B0C /* Login.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0295012C81EF5B00528B0C /* Login.swift in Sources */,
 				FC0294FD2C80B3D700528B0C /* Splash.swift in Sources */,
 				FC0294EB2C80AEE000528B0C /* matchGameApp.swift in Sources */,
 			);
