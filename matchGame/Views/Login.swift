@@ -52,7 +52,8 @@ struct Login: View {
         ),
         label: {
           EmptyView()
-        })
+        }
+      )
     }
   }
 }

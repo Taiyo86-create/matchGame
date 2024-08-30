@@ -35,16 +35,7 @@ class LoginViewModel: ObservableObject {
       }
     }
   }
-  //  新規登録する関数
-  func signUp(email: String, password: String) {
-    Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
-      DispatchQueue.main.async {
-        if result != nil, error == nil {
-          self?.isAuth = true
-        }
-      }
-    }
-  }
+
   //  パスワードをリセットする関数
   func resetPassword(email: String) {
     Auth.auth().sendPasswordReset(withEmail: email) { error in
