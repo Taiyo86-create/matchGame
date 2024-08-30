@@ -15,7 +15,6 @@ class LoginViewModel: ObservableObject {
     //    インスタンスが生成されたら認証情報を確認
     observeAuthChanges()
   }
-  
   //  認証状態を確認する
   private func observeAuthChanges() {
     Auth.auth().addStateDidChangeListener { [weak self] _, user in
@@ -24,7 +23,6 @@ class LoginViewModel: ObservableObject {
       }
     }
   }
-  
   //  ログインする関数
   func signIn(email: String, password: String) {
     Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
@@ -33,6 +31,32 @@ class LoginViewModel: ObservableObject {
           self?.isAuth = true
         }
       }
+    }
+  }
+  //  新規登録する関数
+  func signUp(email: String, password: String) {
+    Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+      DispatchQueue.main.async {
+        if result != nil, error == nil {
+          self?.isAuth = true
+        }
+      }
+    }
+  }
+//  パスワードをリセットする関数
+  func resetPassword(email: String) {
+    Auth.auth().sendPasswordReset(withEmail: email) { error in
+      if let error = error {
+        print("error")
+      }
+    }
+  }
+  func signOut() {
+    do {
+      try Auth.auth().signOut()
+      isAuth = false
+    } catch let signOutError as NSError {
+      print("エラー")
     }
   }
 }
