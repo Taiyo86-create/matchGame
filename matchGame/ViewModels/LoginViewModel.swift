@@ -12,7 +12,7 @@ class LoginViewModel: ObservableObject {
   @Published var isAuth:Bool = false
   
   init() {
-//    インスタンスが生成されたら認証情報を確認
+    //    インスタンスが生成されたら認証情報を確認
     observeAuthChanges()
   }
   
@@ -21,6 +21,17 @@ class LoginViewModel: ObservableObject {
     Auth.auth().addStateDidChangeListener { [weak self] _, user in
       DispatchQueue.main.async {
         self?.isAuth = user != nil
+      }
+    }
+  }
+  
+  //  ログインする関数
+  func signIn(email: String, password: String) {
+    Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+      DispatchQueue.main.async {
+        if result != nil, error == nil {
+          self?.isAuth = true
+        }
       }
     }
   }
