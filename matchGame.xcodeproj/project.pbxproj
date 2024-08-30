@@ -35,6 +35,7 @@
 		FC02952C2C81F23400528B0C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FC02952B2C81F23400528B0C /* FirebaseStorage */; };
 		FC02952E2C81F23400528B0C /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FC02952D2C81F23400528B0C /* FirebaseStorageCombine-Community */; };
 		FC0295302C81F23400528B0C /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = FC02952F2C81F23400528B0C /* FirebaseVertexAI-Preview */; };
+		FC0295322C8205C500528B0C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0295312C8205C500528B0C /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FC0294F12C80AEE400528B0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC0294FC2C80B3D700528B0C /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		FC0295002C81EF5B00528B0C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		FC0295312C8205C500528B0C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		FC0294FB2C80B38100528B0C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FC0295312C8205C500528B0C /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0295322C8205C500528B0C /* LoginViewModel.swift in Sources */,
 				FC0295012C81EF5B00528B0C /* Login.swift in Sources */,
 				FC0294FD2C80B3D700528B0C /* Splash.swift in Sources */,
 				FC0294EB2C80AEE000528B0C /* matchGameApp.swift in Sources */,
