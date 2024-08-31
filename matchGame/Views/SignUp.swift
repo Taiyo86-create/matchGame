@@ -50,7 +50,7 @@ struct SignUp: View {
         }
       }
       NavigationLink(
-        destination: Home(),
+        destination: Home().toolbar(.hidden),
         isActive: Binding(
           get: { signInViewModel.isAuth },
           set: { signInViewModel.isAuth = $0 }

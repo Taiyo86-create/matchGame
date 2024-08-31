@@ -49,9 +49,15 @@ struct Login: View {
             .cornerRadius(10)
             .padding(.horizontal, 30)
         }
-        if loginViewModel.isAuth {
-          //  Home画面へ遷移
-        }
+        NavigationLink(
+          destination: Home().toolbar(.hidden),
+          isActive: Binding(
+            get: { loginViewModel.isAuth },
+            set: { loginViewModel.isAuth = $0 }
+          ),
+          label: {
+            EmptyView()
+          })
       }
     }
   }
