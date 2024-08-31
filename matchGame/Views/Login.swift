@@ -34,7 +34,7 @@ struct Login: View {
         NavigationLink {
           SignUp().toolbar(.hidden)
         } label: {
-          Text("ログインはこちら")
+          Text("新規会員登録はこちら")
         }
         
         Button(action: {

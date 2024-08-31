@@ -38,6 +38,7 @@
 		FC0295322C8205C500528B0C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0295312C8205C500528B0C /* LoginViewModel.swift */; };
 		FC0295342C8283F300528B0C /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0295332C8283F300528B0C /* SignInViewModel.swift */; };
 		FC0295382C82B31300528B0C /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0295372C82B31300528B0C /* SignUp.swift */; };
+		FC02953A2C82BE4700528B0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC0295392C82BE4700528B0C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		FC0295312C8205C500528B0C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FC0295332C8283F300528B0C /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		FC0295372C82B31300528B0C /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		FC0295392C82BE4700528B0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		FC0294E92C80AEE000528B0C /* matchGame */ = {
 			isa = PBXGroup;
 			children = (
+				FC0295392C82BE4700528B0C /* GoogleService-Info.plist */,
 				FC0294EA2C80AEE000528B0C /* matchGameApp.swift */,
 				FC0294F82C80B36200528B0C /* UseCase */,
 				FC0294F92C80B36C00528B0C /* Repository */,
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC0294F22C80AEE400528B0C /* Preview Assets.xcassets in Resources */,
+				FC02953A2C82BE4700528B0C /* GoogleService-Info.plist in Resources */,
 				FC0294EF2C80AEE400528B0C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
