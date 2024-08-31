@@ -14,18 +14,18 @@ struct SignUp: View {
   var body: some View {
     NavigationStack {
       VStack {
-        Image(systemName: "person.crop.circle.fill.badge.plus")
+        Image(systemName: AppConstant.signUpLogo)
           .resizable()
           .frame(width: 80, height: 80)
           .foregroundColor(.blue)
           .padding(.bottom, 20)
         
-        TextField("メールアドレス", text: $email)
+        TextField(AppConstant.email, text: $email)
           .textFieldStyle(RoundedBorderTextFieldStyle())
           .padding(.horizontal, 30)
           .padding(.bottom, 10)
         
-        SecureField("パスワード", text: $password)
+        SecureField(AppConstant.password, text: $password)
           .textFieldStyle(RoundedBorderTextFieldStyle())
           .padding(.horizontal, 30)
           .padding(.bottom, 10)
@@ -33,13 +33,13 @@ struct SignUp: View {
         NavigationLink {
           Login().toolbar(.hidden)
         } label: {
-          Text("ログインはこちら")
+          Text(AppConstant.linkLogin)
         }
         
         Button(action: {
           signInViewModel.signUp(email: email, password: password)
         }) {
-          Text("会員登録")
+          Text(AppConstant.signUp)
             .font(.headline)
             .foregroundColor(.white)
             .padding()

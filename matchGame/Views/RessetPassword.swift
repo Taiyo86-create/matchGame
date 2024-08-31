@@ -11,7 +11,7 @@ struct RessetPassword: View {
   @State var email = ""
   @StateObject var ressetPasswordViewModel = RessetPasswordViewModel()
   var body: some View {
-    TextField("パスワードを忘れた方はこちら", text: $email)
+    TextField("登録したメールアドレス", text: $email)
       .textFieldStyle(RoundedBorderTextFieldStyle())
       .padding(.horizontal, 30)
       .padding(.bottom, 10)
