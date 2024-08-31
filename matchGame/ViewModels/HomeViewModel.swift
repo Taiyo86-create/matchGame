@@ -9,7 +9,7 @@ import Foundation
 import FirebaseAuth
 
 class HomeViewModel: ObservableObject {
-  @Published var isAuth:Bool = false
+  @Published var isLogout:Bool = false
   
   init() {
     //    インスタンスが生成されたら認証情報を確認
@@ -19,7 +19,7 @@ class HomeViewModel: ObservableObject {
   private func observeAuthChanges() {
     Auth.auth().addStateDidChangeListener { [weak self] _, user in
       DispatchQueue.main.async {
-        self?.isAuth = user != nil
+        self?.isLogout = user != nil
       }
     }
   }
@@ -27,7 +27,7 @@ class HomeViewModel: ObservableObject {
   func signOut() {
     do {
       try Auth.auth().signOut()
-      isAuth = false
+      isLogout = true
     } catch _ as NSError {
       print("エラー")
     }
