@@ -42,6 +42,7 @@
 		FC02953C2C8308F600528B0C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02953B2C8308F600528B0C /* Home.swift */; };
 		FC02953E2C830CD900528B0C /* RessetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02953D2C830CD900528B0C /* RessetPassword.swift */; };
 		FC0295402C830DFB00528B0C /* RessetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02953F2C830DFB00528B0C /* RessetPasswordViewModel.swift */; };
+		FC31EEAA2C83100D00FA833D /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31EEA92C83100D00FA833D /* AppConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		FC02953B2C8308F600528B0C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		FC02953D2C830CD900528B0C /* RessetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RessetPassword.swift; sourceTree = "<group>"; };
 		FC02953F2C830DFB00528B0C /* RessetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RessetPasswordViewModel.swift; sourceTree = "<group>"; };
+		FC31EEA92C83100D00FA833D /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				FC0294FB2C80B38100528B0C /* ViewModels */,
 				FC0294EE2C80AEE400528B0C /* Assets.xcassets */,
 				FC0294F02C80AEE400528B0C /* Preview Content */,
+				FC31EEA92C83100D00FA833D /* AppConstant.swift */,
 			);
 			path = matchGame;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC02953E2C830CD900528B0C /* RessetPassword.swift in Sources */,
+				FC31EEAA2C83100D00FA833D /* AppConstant.swift in Sources */,
 				FC0295402C830DFB00528B0C /* RessetPasswordViewModel.swift in Sources */,
 				FC0295322C8205C500528B0C /* LoginViewModel.swift in Sources */,
 				FC0295382C82B31300528B0C /* SignUp.swift in Sources */,
