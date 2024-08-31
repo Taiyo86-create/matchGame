@@ -18,4 +18,6 @@ struct AppConstant {
   static let linkPasswordResset = "パスワードを忘れた方はこちら"
   static let login = "ログイン"
   static let signUp = "会員登録"
+  static let registerEmail = "登録したメールアドレス"
+  static let submitEmail = "送信"
 }
