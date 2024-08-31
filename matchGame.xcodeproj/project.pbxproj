@@ -40,6 +40,8 @@
 		FC0295382C82B31300528B0C /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0295372C82B31300528B0C /* SignUp.swift */; };
 		FC02953A2C82BE4700528B0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC0295392C82BE4700528B0C /* GoogleService-Info.plist */; };
 		FC02953C2C8308F600528B0C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02953B2C8308F600528B0C /* Home.swift */; };
+		FC02953E2C830CD900528B0C /* RessetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02953D2C830CD900528B0C /* RessetPassword.swift */; };
+		FC0295402C830DFB00528B0C /* RessetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02953F2C830DFB00528B0C /* RessetPasswordViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		FC0295372C82B31300528B0C /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		FC0295392C82BE4700528B0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC02953B2C8308F600528B0C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FC02953D2C830CD900528B0C /* RessetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RessetPassword.swift; sourceTree = "<group>"; };
+		FC02953F2C830DFB00528B0C /* RessetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RessetPasswordViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				FC0295002C81EF5B00528B0C /* Login.swift */,
 				FC0295372C82B31300528B0C /* SignUp.swift */,
 				FC02953B2C8308F600528B0C /* Home.swift */,
+				FC02953D2C830CD900528B0C /* RessetPassword.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			children = (
 				FC0295312C8205C500528B0C /* LoginViewModel.swift */,
 				FC0295332C8283F300528B0C /* SignInViewModel.swift */,
+				FC02953F2C830DFB00528B0C /* RessetPasswordViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -262,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC02953E2C830CD900528B0C /* RessetPassword.swift in Sources */,
+				FC0295402C830DFB00528B0C /* RessetPasswordViewModel.swift in Sources */,
 				FC0295322C8205C500528B0C /* LoginViewModel.swift in Sources */,
 				FC0295382C82B31300528B0C /* SignUp.swift in Sources */,
 				FC0295012C81EF5B00528B0C /* Login.swift in Sources */,

@@ -37,6 +37,12 @@ struct Login: View {
           Text("新規会員登録はこちら")
         }
         
+        NavigationLink {
+          RessetPassword()
+        } label: {
+          Text("新規会員登録はこちら")
+        }
+        
         Button(action: {
           loginViewModel.signIn(email: email, password: password)
         }) {
