@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SignUp: View {
+  @State private var email: String = ""
+  @State private var password: String = ""
+  @StateObject var signInViewModel = SignInViewModel()
   var body: some View {
     NavigationStack {
       VStack {
@@ -17,20 +20,15 @@ struct SignUp: View {
           .foregroundColor(.blue)
           .padding(.bottom, 20)
         
-        TextField("メールアドレス", text: .constant(""))
+        TextField("メールアドレス", text: $email)
           .textFieldStyle(RoundedBorderTextFieldStyle())
           .padding(.horizontal, 30)
           .padding(.bottom, 10)
         
-        SecureField("パスワード", text: .constant(""))
+        SecureField("パスワード", text: $password)
           .textFieldStyle(RoundedBorderTextFieldStyle())
           .padding(.horizontal, 30)
           .padding(.bottom, 10)
-        
-        SecureField("パスワード確認", text: .constant(""))
-          .textFieldStyle(RoundedBorderTextFieldStyle())
-          .padding(.horizontal, 30)
-          .padding(.bottom, 20)
         
         NavigationLink {
           Login().toolbar(.hidden)
@@ -39,6 +37,7 @@ struct SignUp: View {
         }
         
         Button(action: {
+          signInViewModel.signUp(email: email, password: password)
         }) {
           Text("会員登録")
             .font(.headline)
@@ -50,6 +49,15 @@ struct SignUp: View {
             .padding(.horizontal, 30)
         }
       }
+      NavigationLink(
+        destination: Home(),
+        isActive: Binding(
+          get: { signInViewModel.isAuth },
+          set: { signInViewModel.isAuth = $0 }
+        ),
+        label: {
+          EmptyView()
+        })
     }
   }
 }

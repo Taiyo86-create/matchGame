@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseAuth
 
-class SignInViewModel {
+class SignInViewModel: ObservableObject {
   @Published var isAuth:Bool = false
   
   init() {
