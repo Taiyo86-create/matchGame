@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct Home: View {
-    var body: some View {
-        Text("Hello, World!")
+  @StateObject var homeViewModel = HomeViewModel()
+  var body: some View {
+    VStack {
+      HStack {
+        Spacer()
+        Button(action: {
+          homeViewModel.signOut()
+        }) {
+          Image(systemName: AppConstant.logoutIcon)
+            .font(.system(size: 25))
+            .padding()
+        }
+      }
+      VStack {
+      }
+      .padding()
+      Spacer()
     }
+  }
 }
 
 #Preview {
-    Home()
+  Home()
 }

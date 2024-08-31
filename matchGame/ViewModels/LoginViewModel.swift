@@ -35,13 +35,4 @@ class LoginViewModel: ObservableObject {
       }
     }
   }
-  //  ログアウトのメソッド
-  func signOut() {
-    do {
-      try Auth.auth().signOut()
-      isAuth = false
-    } catch _ as NSError {
-      print("エラー")
-    }
-  }
 }

@@ -43,6 +43,7 @@
 		FC02953E2C830CD900528B0C /* RessetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02953D2C830CD900528B0C /* RessetPassword.swift */; };
 		FC0295402C830DFB00528B0C /* RessetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02953F2C830DFB00528B0C /* RessetPasswordViewModel.swift */; };
 		FC31EEAA2C83100D00FA833D /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31EEA92C83100D00FA833D /* AppConstant.swift */; };
+		FC31EEAC2C83146600FA833D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31EEAB2C83146600FA833D /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		FC02953D2C830CD900528B0C /* RessetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RessetPassword.swift; sourceTree = "<group>"; };
 		FC02953F2C830DFB00528B0C /* RessetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RessetPasswordViewModel.swift; sourceTree = "<group>"; };
 		FC31EEA92C83100D00FA833D /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		FC31EEAB2C83146600FA833D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				FC0295312C8205C500528B0C /* LoginViewModel.swift */,
 				FC0295332C8283F300528B0C /* SignInViewModel.swift */,
 				FC02953F2C830DFB00528B0C /* RessetPasswordViewModel.swift */,
+				FC31EEAB2C83146600FA833D /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC02953E2C830CD900528B0C /* RessetPassword.swift in Sources */,
+				FC31EEAC2C83146600FA833D /* HomeViewModel.swift in Sources */,
 				FC31EEAA2C83100D00FA833D /* AppConstant.swift in Sources */,
 				FC0295402C830DFB00528B0C /* RessetPasswordViewModel.swift in Sources */,
 				FC0295322C8205C500528B0C /* LoginViewModel.swift in Sources */,
