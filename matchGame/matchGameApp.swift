@@ -19,9 +19,12 @@ class AppDelegate:NSObject, UIApplicationDelegate {
 
 @main
 struct matchGameApp: App {
+  init() {
+    FirebaseApp.configure()
+  }
     var body: some Scene {
         WindowGroup {
-            Splash()
+            Login()
         }
     }
 }

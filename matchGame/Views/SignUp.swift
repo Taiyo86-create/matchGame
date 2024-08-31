@@ -1,46 +1,46 @@
 //
-//  Login.swift
+//  SignIn.swift
 //  matchGame
 //
-//  Created by 水元太陽 on 2024/08/30.
+//  Created by 水元太陽 on 2024/08/31.
 //
 
 import SwiftUI
-import FirebaseAuth
 
-struct Login: View {
-  @State var email: String = ""
-  @State var password: String = ""
-  @StateObject var loginViewModel = LoginViewModel()
+struct SignUp: View {
   var body: some View {
     NavigationStack {
       VStack {
-        Image(systemName: "lock.circle")
+        Image(systemName: "person.crop.circle.fill.badge.plus")
           .resizable()
           .frame(width: 80, height: 80)
           .foregroundColor(.blue)
           .padding(.bottom, 20)
         
-        TextField("メールアドレス", text: $email)
+        TextField("メールアドレス", text: .constant(""))
           .textFieldStyle(RoundedBorderTextFieldStyle())
           .padding(.horizontal, 30)
           .padding(.bottom, 10)
         
-        SecureField("パスワード", text: $password)
+        SecureField("パスワード", text: .constant(""))
+          .textFieldStyle(RoundedBorderTextFieldStyle())
+          .padding(.horizontal, 30)
+          .padding(.bottom, 10)
+        
+        SecureField("パスワード確認", text: .constant(""))
           .textFieldStyle(RoundedBorderTextFieldStyle())
           .padding(.horizontal, 30)
           .padding(.bottom, 20)
         
         NavigationLink {
-          SignUp().toolbar(.hidden)
+          Login().toolbar(.hidden)
         } label: {
           Text("ログインはこちら")
         }
         
         Button(action: {
-          loginViewModel.signIn(email: email, password: password)
         }) {
-          Text("ログイン")
+          Text("会員登録")
             .font(.headline)
             .foregroundColor(.white)
             .padding()
@@ -49,14 +49,11 @@ struct Login: View {
             .cornerRadius(10)
             .padding(.horizontal, 30)
         }
-        if loginViewModel.isAuth {
-          //  Home画面へ遷移
-        }
       }
     }
   }
 }
 
 #Preview {
-  Login()
+    SignUp()
 }
